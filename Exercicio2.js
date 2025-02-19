@@ -8,7 +8,7 @@ const rl = readline.createInterface({
 
 // pedindo para que o usuário informe seu nome e captura o dado
 rl.question("Escreva seu nome: ", (nome) => {
-  console.log(`Olá, ${nome}! qual o seu salario`);
+  console.log(`Olá, ${nome}! qual o seu nome`);
 
   rl.close(); // fecha a interface após a captura do dado
 });
