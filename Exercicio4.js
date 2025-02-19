@@ -1,17 +1,15 @@
-const readline = require("readline"); // importa o módulo readline
+const readline = require("readline");
 
-// cria uma interface de leitura para entrada e saída de dados
 const rl = readline.createInterface({
   input: process.stdin,
   output: process.stdout,
 });
 
-// pedindo para que o usuário informe seu nome e captura o dado
-rl.question("Digite o ano: ", (n1) => {
-    
-    const n2 = parseInt(n1) / 4
-    console.log(`Resultado: ${n2}`);
-    
-    rl.close(); // fecha a interface após a captura dos dados
+rl.question("Digite o primeiro número intero: ", (num1) => {
+  rl.question("Digite o segundo número inteiro: ", (num2) => {
+    console.log(
+      `O somatório entre ${num1} e ${num2} é ${parseInt(num1) + parseInt(num2)}`
+    );
+    rl.close();
   });
-
+});
